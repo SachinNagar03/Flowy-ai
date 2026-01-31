@@ -4,7 +4,7 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <nav className="nav glass">
-      <div className="container">
+      <div className="nav-container">
         <div className="navContent">
           {/* Logo */}
           <div className="logo">
@@ -25,8 +25,8 @@ export default function Navbar() {
 
           {/* Buttons */}
           <div className="navButtons">
-            <button className="btn btnGhost">Sign In</button>
-            <button className="btn btnHero">Get Started</button>
+            <button className="Navbtn btnGhost">Sign In</button>
+            <button className="Navbtn btnHero">Get Started</button>
           </div>
         </div>
       </div>

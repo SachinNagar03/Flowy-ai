@@ -24,12 +24,12 @@ body {
 
 .glass {
   background: hsla(222, 47%, 6%, 0.8);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid hsla(217, 33%, 15%, 0.5);
 }
 
-.container {
+.nav-container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
@@ -99,7 +99,7 @@ body {
   gap: 1rem;
 }
 
-.btn {
+.Navbtn {
   display: inline-flex;
   align-items: center;
   justify-content: center;

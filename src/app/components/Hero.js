@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="bg-glow"></div>
       <div className="grid-pattern"></div>
 
-      <div className="container">
+      <div className="hero-container">
         <div className="hero-content">
           {/* Badge */}
           <div className="badge">
