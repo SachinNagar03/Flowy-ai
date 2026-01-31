@@ -1,0 +1,130 @@
+:root {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --primary: 186 100% 50%;
+  --primary-foreground: 222 47% 6%;
+  --muted-foreground: 215 20% 55%;
+  --border: 217 33% 15%;
+}
+
+.footer {
+  padding: 4rem 0;
+  border-top: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+.footerBrand {
+  max-width: 20rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logoIcon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background: hsl(var(--primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon span {
+  color: hsl(var(--primary-foreground));
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.brandDescription {
+  color: hsl(var(--muted-foreground));
+}
+
+.footerLinks h4 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footerLinks ul {
+  list-style: none;
+}
+
+.footerLinks li {
+  margin-bottom: 0.75rem;
+}
+
+.footerLinks a {
+  color: hsl(var(--muted-foreground));
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerLinks a:hover {
+  color: hsl(var(--foreground));
+}
+
+.footerBottom {
+  padding-top: 2rem;
+  border-top: 1px solid hsl(var(--border));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerBottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.socialLinks a:hover {
+  color: hsl(var(--foreground));
+}

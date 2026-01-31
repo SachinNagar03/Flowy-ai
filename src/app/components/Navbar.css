@@ -1,0 +1,134 @@
+:root {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --primary: 186 100% 50%;
+  --primary-foreground: 222 47% 6%;
+  --secondary: 217 33% 12%;
+  --muted-foreground: 215 20% 55%;
+  --border: 217 33% 15%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.glass {
+  background: hsla(222, 47%, 6%, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid hsla(217, 33%, 15%, 0.5);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  background: hsl(var(--primary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon span {
+  color: hsl(var(--primary-foreground));
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Links */
+.navLinks {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLinks a {
+  color: hsl(var(--muted-foreground));
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navLinks a:hover {
+  color: hsl(var(--foreground));
+}
+
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+  }
+}
+
+/* Buttons */
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+}
+
+.btnGhost {
+  background: transparent;
+  color: hsl(var(--foreground));
+}
+
+.btnGhost:hover {
+  background: hsl(var(--secondary));
+}
+
+.btnHero {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  font-weight: 600;
+  box-shadow: 0 0 60px -15px hsla(186, 100%, 50%, 0.5);
+}
+
+.btnHero:hover {
+  box-shadow: 0 0 80px -15px hsla(186, 100%, 50%, 0.6);
+  transform: scale(1.05);
+}
